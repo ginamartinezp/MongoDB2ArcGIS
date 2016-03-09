@@ -1,6 +1,6 @@
 #this is a reference File
 #To use this file fill the following authentication variables and
-#remove the '_Example' from file name, it is necessary to use this tool
+#remove the '_Example' from file name, it is necessary to use this 
 
 user = 'your_mongodb_username'
 password = 'your_mongodb_password'
