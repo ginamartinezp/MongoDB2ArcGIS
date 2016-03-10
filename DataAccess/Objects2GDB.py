@@ -1,24 +1,28 @@
 import arcpy
+import GDBAccess
 
-gdb = './WKTGDB.gdb/'
-fclasPuntos = 'points'
-fclasPolyline = 'polyline'
-fclasPolygon = 'polygons'
+gdb = GDBAccess.gdb
+arcpy.env.workspace = gdb
 
-def getEsriPoint(cx, cy):
-    point = arcpy.Point(cx,cy)
+gdb = GDBAccess.gdb
+fclasPoints = GDBAccess.fclasPoints
+fclasPolyline = GDBAccess.fclasPolyline
+fclasPolygon = GDBAccess.fclasPolygon
+
+def getEsriPoint (cx, cy):
+    point = arcpy.Point(cx, cy)
     return point
 
 def getEsriPolygon(pts):
-    polygon = arcpy.Polygon( arcpy.Array([arcpy.Point(*p) for p in pts]))
+    polygon = arcpy.Polygon(arcpy.Array([arcpy.Point(*p) for p in pts]))
     return polygon
 
 def getEsriPolyline(pts):
-    polyline = arcpy.Polyline( arcpy.Array([arcpy.Point(*p) for p in pts]))
+    polyline = arcpy.Polyline(arcpy.Array([arcpy.Point(*p) for p in pts]))
     return polyline
 
 def insertObjects(fc, fields, objs):
-    cursor = arcpy.da.InsertCursor(fc, fields)
+    cursor = arcpy.da.InsertCursor(gdb + fc, fields)
     for o in objs:
         try:
             cursor.insertRow(o)
@@ -28,7 +32,7 @@ def insertObjects(fc, fields, objs):
     del cursor
 
 if __name__ == '__main__':
-    fields = [ 'name', 'description', 'SHAPE@']
+    fields = ['name', 'description', 'SHAPE@']
 
     objs = []
     name = 'yo'
@@ -38,7 +42,7 @@ if __name__ == '__main__':
     point = getEsriPoint(cx,cy)
     obj = (name,description,point)
     objs.append(obj)
-    insertObjects(gdb+fclasPuntos,fields,objs)
+    insertObjects(gdb+fclasPoints, fields, objs)
     print ('point inserted')
 
     objs1 = []
