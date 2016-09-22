@@ -31,6 +31,20 @@ def insertObjects(fc, fields, objs):
 
     del cursor
 
+# Function that take an object and a set of fields plus a ESRI point
+# a Feature class row is built and stored at the defined FC
+def insertPoint(fc, fields_db, fields_fc, object, point):
+    cursor = arcpy.InsertCursor(gdb + fc)
+    pos = 0
+    while pos < len(fields_fc):
+        row = cursor.newRow()
+        row.setValue(fields_fc[pos],object[fields_db[pos]])
+        pos += 1
+    cursor.insertRow(row)
+    del cursor
+
+
+
 if __name__ == '__main__':
     fields = ['name', 'description', 'SHAPE@']
 
