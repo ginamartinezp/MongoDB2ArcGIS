@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="057c511c-199c-42b8-a50a-02bf79dcbe5c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000005.CatItemTypesByName.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000005.CatItemTypesByName.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000005.CatItemTypesByParentTypeID.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000005.CatItemTypesByParentTypeID.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000005.CatItemTypesByUUID.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000005.CatItemTypesByUUID.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000005.gdbtable" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000005.gdbtable" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000005.gdbtablx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000005.gdbtablx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.CatRelTypesByBackwardLabel.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.CatRelTypesByBackwardLabel.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.CatRelTypesByDestItemTypeID.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.CatRelTypesByDestItemTypeID.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.CatRelTypesByForwardLabel.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.CatRelTypesByForwardLabel.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.CatRelTypesByName.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.CatRelTypesByName.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.CatRelTypesByOriginItemTypeID.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.CatRelTypesByOriginItemTypeID.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.CatRelTypesByUUID.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.CatRelTypesByUUID.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.gdbtable" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.gdbtable" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.gdbtablx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000007.gdbtablx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/timestamps" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/timestamps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MongoDB2ArcGIS.iml" afterPath="$PROJECT_DIR$/.idea/MongoDB2ArcGIS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataAccess/Objects2GDB.py" afterPath="$PROJECT_DIR$/DataAccess/Objects2GDB.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mongo2ArcGIS.py" afterPath="$PROJECT_DIR$/Mongo2ArcGIS.py" />
     </list>
     <ignored path="MongoDB2ArcGIS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -651,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1457483428730</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Testing with Magik GPS data from MongoDB to create a feature class">
+      <created>1474563677801</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1474563677801</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -712,7 +701,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Structure for project" />
     <MESSAGE value="Defining ignore files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defining ignore files" />
+    <MESSAGE value="Testing with Magik GPS data from MongoDB to create a feature class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing with Magik GPS data from MongoDB to create a feature class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
