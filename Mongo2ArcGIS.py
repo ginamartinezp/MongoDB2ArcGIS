@@ -40,7 +40,7 @@ def aggregateTwitterPlaces(coll, fc):
 
 def getGPSpoints(coll, lon, lat):
     fields=['name','description','number','SHAPE@']
-    cur=db[coll].find().limit(10)
+    cur=db[coll].find()
     count = 0
     for res in cur:
         obj = []
