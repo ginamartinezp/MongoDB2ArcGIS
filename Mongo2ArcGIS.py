@@ -39,7 +39,7 @@ def aggregateTwitterPlaces(coll, fc):
 
 
 def getGPSpoints(coll, lon, lat):
-    fields=['name','description','number']
+    fields=['name','description','number','SHAPE@']
     cur=db[coll].find().limit(10)
     count = 0
     for res in cur:
@@ -47,13 +47,15 @@ def getGPSpoints(coll, lon, lat):
         longitude = res[lon]
         latitude = res[lat]
         geometry=Objects2GDB.getEsriPoint(longitude,latitude)
-        obj.append(res['device'])
-        obj.append(res['time_gps'])
+        #geometry = (longitude,latitude)
+        obj.append(str(res['device']))
+        obj.append(str(res['time_gps']))
         obj.append(res['precision'])
         obj.append(geometry)
         Objects2GDB.insertPoint(fc_points, fields, obj)
         count +=1
     print('Inserted %i objects '% (count))
+    del cur
 
 
 
