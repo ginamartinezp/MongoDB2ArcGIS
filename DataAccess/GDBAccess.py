@@ -2,6 +2,7 @@ import arcpy
 
 gdb = './Data/WKTGDB.gdb/' # ESRI Geodatabase Location
 fclasPoints = 'points'
+fclasPoints = 'gpsPoints'
 fclasPolyline = 'polyline'
 fclasPolygon = 'polygons'
 wksp = arcpy.env.workspace = gdb
