@@ -1,30 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="057c511c-199c-42b8-a50a-02bf79dcbe5c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/polyline.CRISTAL.8792.13976.sr.lock" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000001.TablesByName.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000001.TablesByName.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000001.freelist" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000001.freelist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000001.gdbtable" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000001.gdbtable" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000001.gdbtablx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000001.gdbtablx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.CatItemsByPhysicalName.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.CatItemsByPhysicalName.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.CatItemsByType.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.CatItemsByType.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.FDO_UUID.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.FDO_UUID.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.freelist" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.freelist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.gdbtable" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.gdbtable" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.gdbtablx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.gdbtablx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.spx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000004.spx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000006.CatRelsByDestinationID.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000006.CatRelsByDestinationID.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000006.CatRelsByOriginID.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000006.CatRelsByOriginID.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000006.CatRelsByType.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000006.CatRelsByType.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000006.FDO_UUID.atx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000006.FDO_UUID.atx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000006.gdbtable" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000006.gdbtable" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000006.gdbtablx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a00000006.gdbtablx" />
+    <list default="true" id="057c511c-199c-42b8-a50a-02bf79dcbe5c" name="Default" comment="Create a polyline with  the first 100 points that are in a specified bounding box">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a0000000d.gdbtable" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a0000000d.gdbtable" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/a0000000d.gdbtablx" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/a0000000d.gdbtablx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/WKTGDB.gdb/timestamps" afterPath="$PROJECT_DIR$/Data/WKTGDB.gdb/timestamps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataAccess/GDBAccess.py" afterPath="$PROJECT_DIR$/DataAccess/GDBAccess.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mongo2ArcGIS.py" afterPath="$PROJECT_DIR$/Mongo2ArcGIS.py" />
     </list>
     <ignored path="MongoDB2ArcGIS.iws" />
@@ -48,8 +28,8 @@
       <file leaf-file-name="Mongo2ArcGIS.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mongo2ArcGIS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -635,31 +615,38 @@
       <option name="project" value="LOCAL" />
       <updated>1474637646710</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Create a polyline with  the first 100 points that are in a specified bounding box">
+      <created>1475091326249</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1475091326250</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25474682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24604012" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2935586" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24604012" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39809927" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -698,7 +685,8 @@
     <MESSAGE value="Defining ignore files" />
     <MESSAGE value="Testing with Magik GPS data from MongoDB to create a feature class" />
     <MESSAGE value="Finally works well!! &#10;It connects to a MongoDB called Magike_Status and insert  10 gps data in a feature class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally works well!! &#10;It connects to a MongoDB called Magike_Status and insert  10 gps data in a feature class" />
+    <MESSAGE value="Create a polyline with  the first 100 points that are in a specified bounding box" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a polyline with  the first 100 points that are in a specified bounding box" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -708,6 +696,11 @@
           <line>12</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Mongo2ArcGIS.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -716,7 +709,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1071,8 +1064,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Mongo2ArcGIS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>

@@ -60,27 +60,76 @@ def getGPSpoints(coll, lon, lat):
 
 def getPolylineTracks(coll,lon, lat):
     fields=['name','time','precision','SHAPE@']
-    cur=db[coll].find({ "longitude": { "$gt": -0.176, "$lt": 0.049 }, "latitude": { "$gt": 39.92, "$lt": 40.079 }}).limit(100)
+    cur=db[coll].aggregate (
+        [
+            {
+              "$match":{"device": "be69c01dd9603be8", "longitude": { "$gt": -0.176, "$lt": 0.049 },
+                            "latitude": { "$gt": 39.92, "$lt": 40.079 },
+                            "speed": {"$lt":30}
+                            }
+            },
+            {
+              "$group": {
+                "_id": {"device": "$device", "timestamp": "$time_gps"},
+                "lat": { "$min": "$latitude"},
+                "lon": {"$min": "$longitude"},
+                "precision": {"$min": "$precision"},
+                "count": {"$sum": 1}
+              }
+
+            },
+            {
+            "$sort": {"_id.device": 1, "_id.timestamp":-1,}
+            },
+            {
+             "$limit": 1000
+            }
+        ]
+    )
     count = 0
     objs=[]
     polylinePoints = []
     for res in cur:
 
-        longitude = res[lon]
-        latitude = res[lat]
+        longitude = res['lon']
+        latitude = res['lat']
         point = [longitude,latitude]
         polylinePoints.append(point)
     del cur
     obj = []
     geometry = Objects2GDB.getEsriPolyline(polylinePoints)
-    obj.append(str(res['device']))
-    obj.append(res['time_gps'])
+    obj.append(str(res['_id']['device']))
+    obj.append(res['_id']['timestamp'])
     obj.append(res['precision'])
     obj.append(geometry)
     objs.append(obj)
     Objects2GDB.insertObjects(fc_polyline, fields, objs)
     count +=1
     print('Inserted %i objects '% (count))
+
+
+    # cur1 = db[coll].distinct("device")
+    # for c in cur1:
+    #     cur2 = db[coll].find({"device": cur1[c]}) #"device": values stored in cur1
+    #     count = 0
+    #     objs = []
+    #     polylinePoints = []
+    #     for res in cur:
+    #         longitude = res[lon]
+    #         latitude = res[lat]
+    #         point = [longitude, latitude]
+    #         polylinePoints.append(point)
+    #     del cur
+    #     obj = []
+    #     geometry = Objects2GDB.getEsriPolyline(polylinePoints)
+    #     obj.append(str(res['device']))
+    #     obj.append(res['time_gps'])
+    #     obj.append(res['precision'])
+    #     obj.append(geometry)
+    #     objs.append(obj)
+    #     Objects2GDB.insertObjects(fc_polyline, fields, objs)
+    #     count += 1
+    #     print('Inserted %i objects ' % (count))
 
 
 
